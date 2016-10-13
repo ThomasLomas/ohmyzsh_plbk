@@ -14,7 +14,6 @@
   with_items:
     - zsh
     - git
-  notify: clean yum cache
 
 - git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh accept_hostkey=true update=no
   become: true
